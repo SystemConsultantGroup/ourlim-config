@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-issuer"
+spec:
+  tls:
+  - hosts:
+    - blabla.scg.skku.ac.kr
+    secretName: gitops-tls
+  rules:
+  - host: blabla.scg.skku.ac.kr
+    http:
+      paths:
+      - backend:
+          service:
+            name: service
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
