@@ -7,6 +7,6 @@ resources:
   - ../../base
 images:
   - name: registry.scg.skku.ac.kr/ourlim-fe
-    newTag: '72'
+    newTag: 'localhost'
   - name: registry.scg.skku.ac.kr/ourlim-be
-    newTag: '72'
+    newTag: 'latest'
