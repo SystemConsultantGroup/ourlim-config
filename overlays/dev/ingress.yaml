@@ -16,7 +16,7 @@ spec:
         paths:
           - backend:
               service:
-                name: service
+                name: fe-service
                 port:
                   number: 80
             path: /
