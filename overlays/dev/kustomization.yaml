@@ -2,11 +2,11 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: ourlim
 patchesStrategicMerge:
-  - ingress.yaml
+- ingress.yaml
 resources:
-  - ../../base
+- ../../base
 images:
-  - name: registry.scg.skku.ac.kr/ourlim-fe
-    newTag: 'https'
-  - name: registry.scg.skku.ac.kr/ourlim-be
-    newTag: 'latest'
+- name: registry.scg.skku.ac.kr/ourlim-be
+  newTag: "19"
+- name: registry.scg.skku.ac.kr/ourlim-fe
+  newTag: "19"
