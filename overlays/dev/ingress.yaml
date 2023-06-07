@@ -21,3 +21,10 @@ spec:
                   number: 80
             path: /
             pathType: Prefix
+          - backend:
+              service:
+                name: be-service
+                port:
+                  number: 80
+            path: /api
+            pathType: Prefix
