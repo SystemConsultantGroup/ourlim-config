@@ -26,5 +26,5 @@ spec:
                 name: be-service
                 port:
                   number: 80
-             path: /api/v1(/|$)(.*)
+            path: /api/v1(/|$)(.*)
             pathType: Prefix
