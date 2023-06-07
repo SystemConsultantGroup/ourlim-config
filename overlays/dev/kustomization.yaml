@@ -7,6 +7,6 @@ resources:
   - ../../base
 images:
   - name: registry.scg.skku.ac.kr/ourlim-fe
-    newTag: 'double'
+    newTag: 'https'
   - name: registry.scg.skku.ac.kr/ourlim-be
     newTag: 'latest'
