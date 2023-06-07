@@ -40,5 +40,5 @@ spec:
           ports:
             - containerPort: 8000
           envFrom:
-            - configmapRef:
+            - configMapRef:
                 name: ourlim-be-config
