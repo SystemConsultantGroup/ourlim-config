@@ -9,4 +9,4 @@ images:
   - name: registry.scg.skku.ac.kr/ourlim-fe
     newTag: 'double'
   - name: registry.scg.skku.ac.kr/ourlim-be
-    newTag: 'double'
+    newTag: 'latest'
