@@ -42,5 +42,3 @@ spec:
           envFrom:
             - configmapRef:
               name: ourlim-be-config
-            - secretRef:
-              name: ourlim-be-secret
