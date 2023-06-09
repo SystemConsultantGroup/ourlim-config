@@ -8,6 +8,6 @@ resources:
 - ../../base
 images:
 - name: registry.scg.skku.ac.kr/ourlim-be
-  newTag: "23"
+  newTag: "24"
 - name: registry.scg.skku.ac.kr/ourlim-fe
-  newTag: "23"
+  newTag: "24"
