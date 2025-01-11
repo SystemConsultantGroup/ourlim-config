@@ -7,7 +7,7 @@ patchesStrategicMerge:
 - deployment.yaml
 - service.yaml
 resources:
-- ../../base
+- ../../../base/fe
 images:
 - name: harbor.k8s.scg.skku.ac.kr/library/ourlim-fe
   newTag: "prod1"

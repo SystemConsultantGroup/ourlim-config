@@ -7,7 +7,7 @@ patchesStrategicMerge:
 - deployment.yaml
 - service.yaml
 resources:
-- ../../base
+- ../../../base/be
 - secret.yaml
 images:
 - name: harbor.k8s.scg.skku.ac.kr/library/ourlim-be
