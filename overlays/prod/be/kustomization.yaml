@@ -1,13 +1,14 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: ourlim
-namePrefix: dev-
+namePrefix: prod-
 patchesStrategicMerge:
 - ingress.yaml
+- deployment.yaml
+- service.yaml
 resources:
 - ../../base
+- secret.yaml
 images:
-- name: registry.scg.skku.ac.kr/ourlim-be
-  newTag: "31"
-- name: registry.scg.skku.ac.kr/ourlim-fe
-  newTag: "31"
+- name: harbor.k8s.scg.skku.ac.kr/library/ourlim-be
+  newTag: "prod1"

@@ -4,10 +4,10 @@ namespace: ourlim
 namePrefix: prod-
 patchesStrategicMerge:
 - ingress.yaml
+- deployment.yaml
+- service.yaml
 resources:
 - ../../base
 images:
-- name: registry.scg.skku.ac.kr/ourlim-be
-  newTag: "19"
-- name: registry.scg.skku.ac.kr/ourlim-fe
-  newTag: "19"
+- name: harbor.k8s.scg.skku.ac.kr/library/ourlim-fe
+  newTag: "prod1"
